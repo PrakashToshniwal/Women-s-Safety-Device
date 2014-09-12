@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Torch Alarm</string>
+    <string name="hello_world">Vivek Tejwani®</string>
+    <string name="action_settings">Send Report</string>
+    <string name="on_off_switch_text">On Off Button</string>
+    <string name="countdown_button_text">Alarm</string>
+    <string name="title_activity_countdown">CountdownActivity</string>
+    <string name="alarm_text">Alarm Time :</string>
+    <string name="save_button">Save</string>
+    <string name="soundTextView">Do you want sound?</string>
+    <string name="stop_button">Stop</string>
+    <string name="send_button_text">Send Alarm</string>
+    <string name="app_UUID">536b272f-a9bb-47e8-a94c-606f2dd115ee</string>
+    <string name="receive_btn">Receive Alarm</string>
+    <string name="title_activity_httprequest">HTTPRequestActivity</string>
+	<string name="httprequest_btn">Send HTTP Request</string>
+	<string name="address_text">Address:</string>
+	<string name="data_text">Data:</string>
+	<string name="sendRequestButton">Send</string>
+	<string name="response_text">Response:</string>
+	<string name="connect_button">Connect</string>
+	<string name="address_hint">www.google.com</string>
+	<string name="data_hint">Hello Server</string>
+</resources>

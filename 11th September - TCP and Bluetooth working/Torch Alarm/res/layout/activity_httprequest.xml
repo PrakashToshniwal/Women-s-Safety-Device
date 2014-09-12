@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/torch1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.torch.HTTPRequestActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="144dp"
+        android:layout_marginLeft="1dp"
+        android:text="@string/address_text" />
+
+    <TextView
+        android:id="@+id/dataTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addressTextView"
+        android:layout_alignTop="@+id/addressTextView"
+        android:layout_marginTop="43dp"
+        android:text="@string/data_text" />
+
+    <TextView
+        android:id="@+id/responseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dataTextView"
+        android:layout_below="@+id/dataTextView"
+        android:layout_marginTop="29dp"
+        android:text="@string/response_text" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/responseTextView"
+        android:onClick="ConnectClick"
+        android:text="@string/connect_button"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:onClick="SendClick"
+        android:text="@string/sendRequestButton"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sendButton"
+        android:layout_alignBottom="@+id/addressTextView"
+        android:ems="10" 
+        android:hint="@string/address_hint"
+        android:inputType="text"
+        android:textColor="#FFFFFF">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/dataText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dataTextView"
+        android:layout_alignBottom="@+id/dataTextView"
+        android:layout_alignLeft="@+id/addressText"
+        android:ems="10" 
+        android:hint="@string/data_hint"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/ResponsetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/responseTextView"
+        android:layout_alignLeft="@+id/dataText"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

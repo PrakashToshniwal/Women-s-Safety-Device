@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/torch1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.torch.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/hello_world"
+        android:textColor="#FFFFFF" />
+
+    <Switch
+        android:id="@+id/onOffSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="67dp"
+        android:text="@string/on_off_switch_text"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/countdownButton"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="37dp"
+        android:onClick="stopClick"
+        android:text="@string/stop_button" 
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/countdownButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onOffSwitch"
+        android:layout_alignTop="@+id/httpButton"
+        android:onClick="countdownClick"
+        android:text="@string/countdown_button_text"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/httpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="18dp"
+        android:onClick="httpClick"
+        android:text="@string/httprequest_btn"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
